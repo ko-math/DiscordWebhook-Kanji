@@ -1,0 +1,20 @@
+name: Send Kanji to Discord
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run script
+        env:
+          DISCORD_KOMATH_KANJI: ${{ secrets.DISCORD_KOMATH_KANJI }}
+        run: node index.js
