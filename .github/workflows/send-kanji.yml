@@ -17,4 +17,4 @@ jobs:
       - name: Run script
         env:
           DISCORD_KOMATH_KANJI: ${{ secrets.DISCORD_KOMATH_KANJI }}
-        run: node index.js
+        run: node webhook.js

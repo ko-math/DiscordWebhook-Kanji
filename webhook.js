@@ -1,7 +1,5 @@
 
-//const webhookUrl = process.env.DISCORD_KOMATH_KANJI;
-console.log(secrets.DISCORD_KOMATH_KANJI);
-/*
+const webhookUrl = process.env.DISCORD_KOMATH_KANJI;
 async function sendKanji(kanji, explanation, imageUrl, articleUrl) {
     const response = await fetch(webhookUrl, {
         method: "POST",
@@ -39,4 +37,3 @@ sendKanji(
     "https://kanji.jitenon.jp/shotai3/27916.gif",
     "https://kanji.jitenon.jp/kanjiy/27916#google_vignette"
 );
-*/
